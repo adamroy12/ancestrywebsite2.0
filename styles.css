@@ -2,9 +2,8 @@ body {
   background-image: url("assets/bg-masthead.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh - 17px);
+  min-height: calc(100vh - 16px);
 }
-
 
 .text-center {
   background-color: #000000;
@@ -18,9 +17,11 @@ body {
 }
 
 /* navbar */
+
 ul {
+  text-align: center;
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
   background-color: #4b4949;
@@ -30,7 +31,7 @@ ul {
 }
 
 li {
-  float: left;
+  display: inline-block;
   opacity: 100%;
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -50,67 +51,13 @@ background-color: #111;
 background-color: #04AA6D;
 }
 
-/* phones, 600px - */
-@media only screen and (max-width: 600px) {
-  h1 {
-      font-size: 30px;
-  }
-  #intro {
-      font-size: 20px;
-  }
-}
-
-
-/* large phone, tablets, 600px + */
-@media only screen and (min-width: 600px) {
-  h1 {
-      font-size: 40px;
-  }
-  #intro {
-      font-size: 25px;
-  }
-}
-
-/* Landscape tablets, 768px + */
-@media only screen and (min-width: 768px) {
-  h1 {
-      font-size: 50px;
-  }
-  #intro {
-      font-size: 25px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  h1 {
-      font-size: 70px;
-  }
-  #intro {
-      font-size: px;
-  }
-  
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  h1 {
-      font-size: 110px;
-  }
-  #intro {
-      font-size: 30px;
-  }
-}
-
-/*general rules */
-
 h1 {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
 #ian {
-  max-width: 20%;
+  width: 20%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -119,7 +66,6 @@ h1 {
   position: relative;
   top: 20px;
 }
-
 
 /*form*/
 
@@ -147,8 +93,7 @@ fieldset {
   border-left-style: hidden;
   border-bottom-style: hidden;
   padding-top: 15px;
-  padding-bottom: 20px;
-  border-radius: 60px;
+  padding-bottom: 6px;
 }
 
 label{
@@ -159,7 +104,7 @@ label{
 
 input {
   width: 50%;
-  padding: 12px 20px;
+  padding: 12px 10px;
   margin: 8px 0;
   display: block;
   border: 1px solid #ccc;
@@ -170,8 +115,8 @@ input {
 }
 textarea {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px 10px;
+  margin: auto ;
   display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -179,8 +124,75 @@ textarea {
 }
 
 button {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: large;
+}
+
+/* phones, 600px - */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  #intro {
+    font-size: 20px;
+  }
+  #contactinfo {
+    font-size: 20px;
+  }
+  li a {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+    font-size: 13px;
+  }
+  input {
+    font-size: 9px;
+  }
+  img {
+    max-width: 50%;
+  }
+}
+
+
+/* large phone, tablets, 600px + */
+@media only screen and (min-width: 600px) {
+  h1 {
+      font-size: 50px;
+  }
+  #intro {
+      font-size: 25px;
+  }
+}
+
+/* Landscape tablets, 768px + */
+@media only screen and (min-width: 768px) {
+  h1 {
+      font-size: 60px;
+  }
+  #intro {
+      font-size: 25px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+      font-size: 70px;
+  }
+  #intro {
+      font-size: px;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+      font-size: 110px;
+  }
+  #intro {
+      font-size: 30px;
+  }
 }
 
 /*Animation*/
